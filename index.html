@@ -9,15 +9,33 @@
     <title>Learning Js</title>
 </head>
 <body>
-    <h1>Login Form</h1>
-
-<form action="post">
+    
+ 
+        <div class="container">
+            <h1>Login Form</h1>
 
     <input type="email" placeholder=" Enter Email" id="email"> <br><br>
     <input type="password" placeholder=" Enter Password" id="pswd"> <br> <br>
-    <input type="number" placeholder="Enter Age" id="age"> <br><br>
-    <input type="Submit" value="Submit" id="Submit">
-</form>
+    <!-- <input type="number" placeholder="Enter Age" id="age"> <br><br> -->
+    <input type="Submit" value="Submit" id="submit">
+</div>
+ 
+<script>
+    var email = document.getElementById("email")
+    var pswd = document.getElementById("pswd")
+    // var age = document.getElementById("age")
+    var submit = document.getElementById("submit")
+
+    submit.onclick = function()
+    {
+        if(email.value != "" && pswd.value != "")
+
+        {
+            document.write("<h1>Success</h1>")
+        }
+    }
+
+</script>
     
 </body>
 </html>
