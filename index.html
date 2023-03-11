@@ -16,24 +16,30 @@
 
     <input type="email" placeholder=" Enter Email" id="email"> <br><br>
     <input type="password" placeholder=" Enter Password" id="pswd"> <br> <br>
-    <!-- <input type="number" placeholder="Enter Age" id="age"> <br><br> -->
+    <input type="number" placeholder="Enter Age" id="age"> <br><br>
     <input type="Submit" value="Submit" id="submit">
 </div>
  
 <script>
     var email = document.getElementById("email")
     var pswd = document.getElementById("pswd")
-    // var age = document.getElementById("age")
+    var age = document.getElementById("age")
     var submit = document.getElementById("submit")
 
     submit.onclick = function()
     {
-        if(email.value != "" && pswd.value != "")
+        if(email.value != "" && pswd.value != "" && age.value >=18 && age.value <=40)
 
         {
             document.write("<h1>Success</h1>")
         }
+
+        // if() {
+
+        //     document.write("<h1>Success</h1>")
+        // }
     }
+
 
 </script>
     
